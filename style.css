@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 1;
+}
+
+header {
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2782a3;
+    color: black;
+    text-align: left;
+    border: solid 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    color: black;
+}
+
+header nav {
+    padding-top: 10px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.left-column {
+    width: 25%;
+    font-size: 32px;
+    text-align: end;
+    padding-right: 20px;
+
+}
+
+.right-column {
+    width: 75%;
+    border-left: 3px solid black;
+    padding: 20px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+body {
+    background-color: white;
+}
+
+.About-Me-Image {
+    width: 25%;
+    padding: 5px;
+    float: left;
+    filter: none;
+    transition: none;
+}
+
+img {
+    filter: grayscale(30%) drop-shadow(2px 2px 2px black);
+    transition: filter 0.3s ease;
+}
+
+
+img:hover {
+    filter: grayscale(10%) drop-shadow(5px 5px 5px black);
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project-image {
+    width: 100%;
+    padding: 5px;
+    position: relative;
+}
+
+.project-image2 {
+    width: 50%;
+    padding: 5px;
+    position: relative;
+}
+
+.project-image3 {
+    width: 50%;
+    float: right;
+    padding: 5px;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .main-section {
+        flex-direction: column;
+    }
+
+    .contact-list {
+        flex-direction: column;
+    }
+
+    .text-block {
+        position: unset;
+    }
+}
